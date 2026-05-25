@@ -13,6 +13,10 @@ public interface MyList<T> {
     T removeAt(int index);
     boolean remove(T element);
 
+    // --- NOVOS MÉTODOS ADICIONADOS PARA A ATIVIDADE ---
+    void reverse();
+    void removeNthFromEnd(int n);
+
     // Operações de consulta e gerenciamento
     void clear();
     int find(T element);
