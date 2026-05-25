@@ -21,7 +21,7 @@ public class Main {
 
         // TESTE DA QUESTÃO 2: Deletar sem predecessor
         System.out.println("\n2. Teste Delete Without Predecessor (Questão 2):");
-        // Vamos remover o número 19 (que está no índice 2)
+        
         lista1.removerNoIntermediarioPorIndice(2);
         imprimirLista(lista1); // Deve mostrar: 4 -> 5 -> 20 -> 47
 
@@ -52,13 +52,13 @@ public class Main {
         System.out.println("\n5. Teste Remove Nth From End (Questão 5):");
         System.out.print("Lista original: "); imprimirLista(listaA);
 
-        // Removendo o 2º elemento a partir do final (que será o número 7)
+        
         System.out.println("Removendo o 2º nó a partir do final (n=2)...");
         listaA.removeNthFromEnd(2);
         imprimirLista(listaA); // O número 7 deve sumir da lista
     }
 
-    // Método auxiliar para imprimir os elementos no console durante o teste
+    
     public static void imprimirLista(MyLinkedList<Integer> lista) {
         if (lista.size() == 0) {
             System.out.println("Lista Vazia");
